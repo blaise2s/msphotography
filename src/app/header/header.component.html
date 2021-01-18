@@ -1,0 +1,26 @@
+<!-- src/app/header.component.html -->
+<header>
+  <div class="header-content">
+    <div>
+      <div class="toggle-button" (click)="sliderMenuService.openMenu()">
+        <fa-icon size="1x" [icon]="faBars"></fa-icon>
+      </div>
+      <div class="header-content-left">
+        <div><a class="menu-link" [routerLink]="'welcome'">Welcome</a></div>
+        <div><a class="menu-link" [routerLink]="'gallery'">Gallery</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="brand">
+        <a class="" [routerLink]="''">MS Photography</a>
+      </div>
+    </div>
+    <div>
+      <div class="header-content-right">
+        <div><a class="menu-link" [routerLink]="'services'">Services</a></div>
+        <div><a class="menu-link" [routerLink]="'Contact'">Contact</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+<msp-slider-menu></msp-slider-menu>
