@@ -1,0 +1,19 @@
+// src/footer/footer.component.scss
+
+.footer {
+  height: 10rem;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+
+  a {
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      color: #414141;
+    }
+  }
+}

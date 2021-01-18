@@ -1,0 +1,19 @@
+<!-- src/slider-menu/slider-menu.component.html -->
+<div class="overlay" [attr.visible]="sliderMenuService.menuOpen ? '' : null">
+  <div class="slider-menu">
+    <div
+      class="toggle-button slider-menu-close"
+      (click)="sliderMenuService.closeMenu()"
+    >
+      <fa-icon size="1x" [icon]="faTimes"></fa-icon>
+    </div>
+    <div class="slider-menu-content">
+      <div><a class="menu-link" [routerLink]="'welcome'">Welcome</a></div>
+      <div><a class="menu-link" [routerLink]="'gallery'">Gallery</a></div>
+      <div><a class="menu-link" [routerLink]="'services'">Services</a></div>
+      <div><a class="menu-link" [routerLink]="'contact'">Contact</a></div>
+      <div><a class="menu-link" [routerLink]="''">Home</a></div>
+    </div>
+  </div>
+  <div class="overlay-listener" (click)="sliderMenuService.closeMenu()"></div>
+</div>
